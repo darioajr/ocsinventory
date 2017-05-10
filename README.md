@@ -1,0 +1,2 @@
+# ocsinventory
+Docker ocsinventory app
