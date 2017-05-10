@@ -1,0 +1,10 @@
+#!/bin/sh
+docker run \
+--name ocs \
+-e DB_USER="ocsusr" \
+-e DB_PASS="ocspass" \
+-e DB_NAME="ocsweb" \
+-e MYSQL_ROOT_PASSWORD="password" \
+--link mysql_instance:db \
+-p 80:80 \
+-d darioajr/ocsinventory
